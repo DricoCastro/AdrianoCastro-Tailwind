@@ -1,7 +1,7 @@
-import { AwardsSection } from "./sections/awards/awards";
-import { MeSection } from "./sections/me/me";
-import { ProjectsSection } from "./sections/project/projects";
-import { WhyMeSection } from "./sections/whyMe/whyMe";
+import { AwardsSection } from "./awards";
+import { MeSection } from "./me";
+import { ProjectsSection } from "./project";
+import { WhyMeSection } from "./whyMe";
 
 export const Home = () => {
   return (
@@ -11,7 +11,7 @@ export const Home = () => {
     flex 
     flex-col 
     items-center 
-    justify-center
+    justify-between
     bg-purple-400
     min-h-screen
     `}
