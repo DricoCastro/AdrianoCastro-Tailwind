@@ -20,7 +20,7 @@ export const MeSection = () => {
   }
   function onTapWpp() {
     window.open(
-      `https://api.whatsapp.com/send?phone=5531975113020&text=😀 Olá,${brokeLine}Olá, podemos conversar?`
+      `https://api.whatsapp.com/send?phone=5531975113020&text=😀 Olá,${brokeLine}podemos conversar?`
     );
   }
   function onTapLinkedin() {
