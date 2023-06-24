@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider/Divider";
 import Menu from "@mui/material/Menu/Menu";
 
 const logoLetterWhite = require("../../../../public/svgs/AC-white.svg");
-const menuIcon = require("../../../../public/icons/menu.svg");
+const menuIcon = require("../../../../public/icons/menu-two.svg");
 
 export const DefaultHeader = () => {
   const router = useRouter();
@@ -27,7 +27,7 @@ export const DefaultHeader = () => {
   return (
     <div
       className={`
-      lg:px-48 py-5 
+      lg:px-48 py-6
       w-full
       bg-blackPearl
       flex
@@ -120,7 +120,7 @@ export const DefaultHeader = () => {
       >
         <IconButton
           onClick={openUserMenu}
-          size="large"
+          size="small"
           sx={{ ml: 0 }}
           aria-controls={openDrawer ? "account-menu" : undefined}
           aria-haspopup="true"
