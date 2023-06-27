@@ -107,7 +107,7 @@ export const DefaultHeader = () => {
           hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-[3px] before:origin-right before:transition-transform before:duration-500 before:scale-x-0 before:bg-royalBlue before:absolute before:left-0 before:bottom-[-2px]
           `}
         >
-          WHY ME?
+          ABOUT ME
         </a>
         <a
           onClick={onTapWpp}
@@ -291,7 +291,7 @@ export const DefaultHeader = () => {
               text-royalBlue
               `}
             >
-              WHY ME?
+              ABOUT ME
             </span>
           </div>
           <Divider />

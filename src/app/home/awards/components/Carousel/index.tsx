@@ -30,6 +30,7 @@ export default function CertificatesCarousel() {
           gap-y-8
           cursor-pointer
           lg:mb-12
+          md:mb-16
           mb-16
           `}
       >
