@@ -12,8 +12,8 @@ export const ProjectsSection = () => {
       flex-col
       items-center
       justify-center
-      pt-8
-      pb-14
+      pt-14
+      pb-28
     `}
     >
       <ProjectsCarousel />

@@ -144,7 +144,7 @@ export default function ProjectsCarousel() {
       prevArrow: <PreviousArrow />,
       responsive: [
         {
-          breakpoint: 764,
+          breakpoint: 1024,
           settings: {
             nextArrow: <div />,
             prevArrow: <div />,
@@ -168,8 +168,8 @@ export default function ProjectsCarousel() {
           flex-col
           items-center
           justify-center
-          gap-y-8
-          mb-10
+          gap-y-14
+          mb-14
           `}
         >
           <a
