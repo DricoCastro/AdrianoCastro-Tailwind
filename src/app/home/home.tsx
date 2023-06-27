@@ -12,7 +12,6 @@ export const Home = () => {
     flex-col 
     items-center 
     justify-between
-    bg-purple-400
     min-h-screen
     `}
     >

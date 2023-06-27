@@ -22,6 +22,7 @@ module.exports = {
         'mirage': "#181924",
         'gray': "#8E8E8E",
         'codGray': "#0B0B0B",
+        "raven":"#212122"
       }
     },
   },

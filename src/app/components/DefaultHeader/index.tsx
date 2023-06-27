@@ -10,6 +10,7 @@ const logoLetterWhite = require("../../../../public/svgs/AC-white.svg");
 const menuIcon = require("../../../../public/icons/menu-two.svg");
 
 export const DefaultHeader = () => {
+  const brokeLine: string = "%0A";
   const router = useRouter();
   const [drawer, setDrawer] = useState<null | HTMLElement>(null);
   const openDrawer = drawer !== null;
@@ -22,6 +23,12 @@ export const DefaultHeader = () => {
 
   function onTapHome() {
     router.push("/");
+  }
+
+  function onTapWpp() {
+    window.open(
+      `https://api.whatsapp.com/send?phone=5531975113020&text=😀 Olá,${brokeLine}podemos conversar?`
+    );
   }
 
   return (
@@ -103,11 +110,13 @@ export const DefaultHeader = () => {
           WHY ME?
         </a>
         <a
+          onClick={onTapWpp}
           className={`
         cursor-pointer
         text-base
         font-bold
         hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-[3px] before:origin-right before:transition-transform before:duration-500 before:scale-x-0 before:bg-royalBlue before:absolute before:left-0 before:bottom-[-2px]
+        text-royalBlue
         `}
         >
           LET´S TALK
@@ -303,6 +312,7 @@ export const DefaultHeader = () => {
             `}
           >
             <span
+              onClick={onTapWpp}
               className={`
               text-base
               font-semibold

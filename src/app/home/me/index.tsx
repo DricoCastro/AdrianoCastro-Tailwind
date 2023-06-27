@@ -30,7 +30,7 @@ export const MeSection = () => {
   return (
     <div
       className={`
-      lg:px-48 py-0 
+      lg:px-48 pt-12
       md:flex-row
       px-[15px]
       flex
