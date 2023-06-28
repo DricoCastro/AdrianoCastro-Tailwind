@@ -64,8 +64,7 @@ export default function ProjectsCarousel() {
             <a
               onClick={OnTapProjectLink}
               className={`
-           md:text-2xl
-           text-xl
+           text-2xl
            font-semibold
            flex
            items-center
@@ -78,8 +77,7 @@ export default function ProjectsCarousel() {
             </a>
             <a
               className={`
-           md:text-lg
-           text-base
+           text-lg
            font-normal
            `}
             >
@@ -91,14 +89,15 @@ export default function ProjectsCarousel() {
            flex-row
            items-center
            justify-start
-           gap-x-8
+           md:gap-x-8
+           gap-x-4
            w-full
            `}
             >
               <a
                 className={`
-              md:text-lg
-              text-sm
+                md:text-lg
+              text-base
            font-medium
            `}
               >
@@ -107,8 +106,8 @@ export default function ProjectsCarousel() {
               <div className={`w-0.5 h-5	 bg-royalBlue`} />
               <a
                 className={`
-              md:text-lg
-              text-sm
+                md:text-lg
+              text-base
            font-medium
            `}
               >
@@ -117,8 +116,8 @@ export default function ProjectsCarousel() {
               <div className={`w-0.5 h-5	 bg-royalBlue`} />
               <a
                 className={`
-           md:text-lg
-           text-sm
+                md:text-lg
+           text-base
            font-medium
            `}
               >
