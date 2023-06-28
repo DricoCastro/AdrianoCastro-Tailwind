@@ -1,7 +1,7 @@
-import { AwardsSection } from "./awards";
+import { AboutMeSection } from "./aboutMe";
+import { CertificatesSection } from "./awards";
 import { MeSection } from "./me";
 import { ProjectsSection } from "./project";
-import { WhyMeSection } from "./whyMe";
 
 export const Home = () => {
   return (
@@ -17,8 +17,8 @@ export const Home = () => {
     >
       <MeSection />
       <ProjectsSection />
-      <AwardsSection />
-      <WhyMeSection />
+      <CertificatesSection />
+      <AboutMeSection />
     </div>
   );
 };

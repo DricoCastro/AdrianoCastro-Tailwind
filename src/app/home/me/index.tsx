@@ -29,6 +29,7 @@ export const MeSection = () => {
 
   return (
     <div
+      id="me-section"
       className={`
       lg:px-48 pt-12
       md:flex-row

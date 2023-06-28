@@ -1,7 +1,8 @@
 "use client";
-export const WhyMeSection = () => {
+export const AboutMeSection = () => {
   return (
     <div
+      id="aboutMe-section"
       className={`
       w-full
       lg:px-48

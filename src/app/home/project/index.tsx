@@ -4,6 +4,7 @@ import ProjectsCarousel from "./components/Carousel";
 export const ProjectsSection = () => {
   return (
     <div
+      id="projects-section"
       className={`
       w-full
       lg:px-48

@@ -70,6 +70,7 @@ export const DefaultHeader = () => {
       `}
       >
         <a
+          href="#me-section"
           className={`
           cursor-pointer
           text-base
@@ -80,6 +81,7 @@ export const DefaultHeader = () => {
           ME
         </a>
         <a
+          href="#projects-section"
           className={`
          cursor-pointer
          text-base
@@ -90,6 +92,7 @@ export const DefaultHeader = () => {
           PROJECTS
         </a>
         <a
+          href="#certificates-section"
           className={`
           cursor-pointer
           text-base
@@ -100,6 +103,7 @@ export const DefaultHeader = () => {
           CERTIFICATES
         </a>
         <a
+          href="#aboutMe-section"
           className={`
           cursor-pointer
           text-base
@@ -184,7 +188,6 @@ export const DefaultHeader = () => {
       >
         <div>
           <div
-            onClick={() => {}}
             className={`
             w-full
             h-full
@@ -199,7 +202,8 @@ export const DefaultHeader = () => {
             cursor-pointer
             `}
           >
-            <span
+            <a
+              href="#me-section"
               className={`
               text-base
               font-semibold
@@ -208,7 +212,7 @@ export const DefaultHeader = () => {
               `}
             >
               ME
-            </span>
+            </a>
           </div>
           <Divider style={{ width: "230px" }} />
           <div
@@ -227,7 +231,8 @@ export const DefaultHeader = () => {
             cursor-pointer
             `}
           >
-            <span
+            <a
+              href="#projects-section"
               className={`
               text-base
               font-semibold
@@ -236,7 +241,7 @@ export const DefaultHeader = () => {
               `}
             >
               PROJECTS
-            </span>
+            </a>
           </div>
           <Divider />
           <div
@@ -255,7 +260,8 @@ export const DefaultHeader = () => {
             cursor-pointer
             `}
           >
-            <span
+            <a
+              href="#certificates-section"
               className={`
               text-base
               font-semibold
@@ -264,7 +270,7 @@ export const DefaultHeader = () => {
               `}
             >
               CERTIFICATES
-            </span>
+            </a>
           </div>
           <Divider />
           <div
@@ -283,7 +289,8 @@ export const DefaultHeader = () => {
             cursor-pointer
             `}
           >
-            <span
+            <a
+              href="#aboutMe-section"
               className={`
               text-base
               font-semibold
@@ -292,7 +299,7 @@ export const DefaultHeader = () => {
               `}
             >
               ABOUT ME
-            </span>
+            </a>
           </div>
           <Divider />
           <div

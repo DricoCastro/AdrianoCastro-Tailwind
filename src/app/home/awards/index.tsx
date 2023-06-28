@@ -1,9 +1,10 @@
 "use client";
 import CertificatesCarousel from "./components/Carousel";
 
-export const AwardsSection = () => {
+export const CertificatesSection = () => {
   return (
     <div
+      id="certificates-section"
       className={`
       w-full
       lg:px-48
