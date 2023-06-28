@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./StylesArrow.module.css";
 import Image from "next/image";
-import CertificateData from "./data";
+import certificateData from "./data";
 
 export default function CertificatesCarousel() {
-  const certificateCarousel = CertificateData.map((certificate, i) => (
+  const certificateCarousel = certificateData.map((certificate, i) => (
     <div
       key={i}
       className={`

@@ -6,7 +6,7 @@ const devMedia3 = "/certificates/devmedia3.png";
 const coder2 = "/certificates/coder2.png";
 
 
-const CertificateData = [
+const certificateData = [
     {   title:"Absolute Zero Programming ",
         description:"Completed all studies and requirements with a total course load of 26 hours",
         image: terminal2,
@@ -55,4 +55,4 @@ const CertificateData = [
    
 ]
         
-export default CertificateData;
+export default certificateData;
