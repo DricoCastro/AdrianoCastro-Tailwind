@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./StylesArrow.module.css";
 import ProjectsData from "./data";
 import Image from "next/image";
+import LinkIcon from "@mui/icons-material/Link";
 
 export default function ProjectsCarousel() {
   const projectCarousel = ProjectsData.map((project, i) => {
@@ -20,7 +21,6 @@ export default function ProjectsCarousel() {
         `}
       >
         <div
-          onClick={OnTapProjectLink}
           className={`
         md:flex-row
         flex
@@ -41,7 +41,6 @@ export default function ProjectsCarousel() {
         justify-center
         bg-raven
         rounded-lg
-        cursor-pointer
         ml-[2px]
         `}
           >
@@ -63,12 +62,18 @@ export default function ProjectsCarousel() {
         `}
           >
             <a
+              onClick={OnTapProjectLink}
               className={`
            md:text-2xl
            text-xl
            font-semibold
+           flex
+           items-center
+          cursor-pointer
+          hover:underline hover:underline-offset-2 hover:decoration-2	 hover:decoration-royalBlue
            `}
             >
+              <LinkIcon className={`origin-center -rotate-45 `} />
               {project.name}
             </a>
             <a

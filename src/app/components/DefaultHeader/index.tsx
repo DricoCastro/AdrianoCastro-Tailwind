@@ -208,7 +208,7 @@ export const DefaultHeader = () => {
               text-base
               font-semibold
               ml-[10px]
-              text-royalBlue
+              text-biscay
               `}
             >
               ME
@@ -237,7 +237,7 @@ export const DefaultHeader = () => {
               text-base
               font-semibold
               ml-[10px]
-              text-royalBlue
+              text-biscay
               `}
             >
               PROJECTS
@@ -266,7 +266,7 @@ export const DefaultHeader = () => {
               text-base
               font-semibold
               ml-[10px]
-              text-royalBlue
+              text-biscay
               `}
             >
               CERTIFICATES
@@ -295,7 +295,7 @@ export const DefaultHeader = () => {
               text-base
               font-semibold
               ml-[10px]
-              text-royalBlue
+              text-biscay
               `}
             >
               ABOUT ME
