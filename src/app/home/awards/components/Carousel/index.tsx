@@ -8,17 +8,22 @@ import Image from "next/image";
 import certificateData from "./data";
 
 export default function CertificatesCarousel() {
-  const certificateCarousel = certificateData.map((certificate, i) => (
-    <div
-      key={i}
-      className={`
+  const certificateCarousel = certificateData.map((certificate, i) => {
+    function OnTapCertificateLink() {
+      window.open(`${certificate.link}`);
+    }
+    return (
+      <div
+        key={i}
+        className={`
         m-auto
         p-auto
         h-auto
         `}
-    >
-      <div
-        className={`
+      >
+        <div
+          onClick={OnTapCertificateLink}
+          className={`
           m-auto
           flex
           flex-col
@@ -35,34 +40,35 @@ export default function CertificatesCarousel() {
           lg:mb-14
           mb-16
           `}
-      >
-        <Image width={65} height={0} src={certificate.image} alt="logo" />
-        <a
-          className={`
+        >
+          <Image width={65} height={0} src={certificate.image} alt="logo" />
+          <a
+            className={`
           text-lg
           font-semibold
          `}
-        >
-          {certificate.title}
-        </a>
-        <a
-          className={`
+          >
+            {certificate.title}
+          </a>
+          <a
+            className={`
           text-base
           font-normal
          `}
-        >
-          {`" ${certificate.description} "`}
-        </a>
+          >
+            {`" ${certificate.description} "`}
+          </a>
 
-        <Image
-          width={120}
-          height={25}
-          src={certificate.platformImage}
-          alt="logo"
-        />
+          <Image
+            width={120}
+            height={25}
+            src={certificate.platformImage}
+            alt="logo"
+          />
+        </div>
       </div>
-    </div>
-  ));
+    );
+  });
 
   function NextArrow(props: any) {
     const { className, style, onClick } = props;

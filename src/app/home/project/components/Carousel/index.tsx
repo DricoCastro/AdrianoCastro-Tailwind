@@ -8,15 +8,20 @@ import ProjectsData from "./data";
 import Image from "next/image";
 
 export default function ProjectsCarousel() {
-  const projectCarousel = ProjectsData.map((project, i) => (
-    <div
-      key={i}
-      className={`
+  const projectCarousel = ProjectsData.map((project, i) => {
+    function OnTapProjectLink() {
+      window.open(`${project.link}`);
+    }
+    return (
+      <div
+        key={i}
+        className={`
         m-auto
         `}
-    >
-      <div
-        className={`
+      >
+        <div
+          onClick={OnTapProjectLink}
+          className={`
         md:flex-row
         flex
         flex-col
@@ -25,9 +30,9 @@ export default function ProjectsCarousel() {
         gap-x-8
         mb-10
         `}
-      >
-        <div
-          className={`
+        >
+          <div
+            className={`
         md:w-1/2
         w-[99%]
         h-96
@@ -39,12 +44,12 @@ export default function ProjectsCarousel() {
         cursor-pointer
         ml-[2px]
         `}
-        >
-          <Image width={350} height={250} src={project.image} alt="logo" />
-        </div>
+          >
+            <Image width={350} height={250} src={project.image} alt="logo" />
+          </div>
 
-        <div
-          className={`
+          <div
+            className={`
         md:w-5/12
         md:mt-0
         mt-8
@@ -56,27 +61,27 @@ export default function ProjectsCarousel() {
         md:gap-y-16
         gap-y-10
         `}
-        >
-          <a
-            className={`
+          >
+            <a
+              className={`
            md:text-2xl
            text-xl
            font-semibold
            `}
-          >
-            {project.name}
-          </a>
-          <a
-            className={`
+            >
+              {project.name}
+            </a>
+            <a
+              className={`
            md:text-lg
            text-base
            font-normal
            `}
-          >
-            {project.description}
-          </a>
-          <div
-            className={`
+            >
+              {project.description}
+            </a>
+            <div
+              className={`
            flex
            flex-row
            items-center
@@ -84,41 +89,42 @@ export default function ProjectsCarousel() {
            gap-x-8
            w-full
            `}
-          >
-            <a
-              className={`
+            >
+              <a
+                className={`
               md:text-lg
               text-sm
            font-medium
            `}
-            >
-              {project.projectLanguage1}
-            </a>
-            <div className={`w-0.5 h-5	 bg-royalBlue`} />
-            <a
-              className={`
+              >
+                {project.projectLanguage1}
+              </a>
+              <div className={`w-0.5 h-5	 bg-royalBlue`} />
+              <a
+                className={`
               md:text-lg
               text-sm
            font-medium
            `}
-            >
-              {project.projectLanguage2}
-            </a>
-            <div className={`w-0.5 h-5	 bg-royalBlue`} />
-            <a
-              className={`
+              >
+                {project.projectLanguage2}
+              </a>
+              <div className={`w-0.5 h-5	 bg-royalBlue`} />
+              <a
+                className={`
            md:text-lg
            text-sm
            font-medium
            `}
-            >
-              {project.projectLanguage3}
-            </a>
+              >
+                {project.projectLanguage3}
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  ));
+    );
+  });
 
   function NextArrow(props: any) {
     const { className, style, onClick } = props;
