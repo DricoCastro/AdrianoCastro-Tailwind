@@ -73,7 +73,7 @@ export default function CertificatesCarousel() {
 
   function Carousel() {
     const configCarousel = {
-      dots: true,
+      dots: false,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 3000,
