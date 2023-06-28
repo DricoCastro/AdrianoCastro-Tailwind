@@ -44,7 +44,7 @@ export default function ProjectsCarousel() {
         ml-[2px]
         `}
           >
-            <Image width={350} height={250} src={project.image} alt="logo" />
+            <Image width={320} height={250} src={project.image} alt="logo" />
           </div>
 
           <div

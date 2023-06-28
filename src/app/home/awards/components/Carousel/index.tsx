@@ -61,7 +61,7 @@ export default function CertificatesCarousel() {
           <a
             onClick={OnTapCertificateLink}
             className={`
-            text-sm
+            text-base
            font-medium
            flex
            items-center
@@ -69,7 +69,7 @@ export default function CertificatesCarousel() {
           hover:underline hover:underline-offset-2 hover:decoration-2	 hover:decoration-royalBlue
            `}
           >
-            <LinkIcon className={`origin-center -rotate-45 text-sm `} />
+            <LinkIcon className={`origin-center -rotate-45 text-base `} />
             Certificate
           </a>
 
