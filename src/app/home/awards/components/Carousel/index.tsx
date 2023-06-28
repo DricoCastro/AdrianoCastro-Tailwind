@@ -29,9 +29,6 @@ export default function CertificatesCarousel() {
           mx-6
           gap-y-8
           cursor-pointer
-          lg:mb-12
-          md:mb-16
-          mb-16
           `}
       >
         <Image width={65} height={250} src={certificate.image} alt="logo" />
