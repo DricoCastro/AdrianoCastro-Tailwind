@@ -39,7 +39,7 @@ export const DefaultFooter = () => {
     items-center
     justify-center
     bg-codGray
-    text-snow
+    text-gray
     py-16
   `}
     >
@@ -49,7 +49,13 @@ export const DefaultFooter = () => {
         src={logoLetterWhite}
         alt="logoLetterWhite"
       />
-      <a>Adriano Castro S.A © Copyright 2023</a>
+      <a
+        className={`
+       text-white
+       `}
+      >
+        Adriano Castro S.A © Copyright 2023
+      </a>
 
       <div
         className={`
@@ -64,6 +70,7 @@ export const DefaultFooter = () => {
           onClick={onTapGit}
           className={`
           cursor-pointer
+          text-white
           hover:text-royalBlue
           md:text-2xl
             text-3xl
@@ -74,6 +81,7 @@ export const DefaultFooter = () => {
           onClick={onTapLinkedin}
           className={`
           cursor-pointer
+          text-white
           hover:text-royalBlue
           md:text-2xl
             text-3xl
@@ -84,6 +92,7 @@ export const DefaultFooter = () => {
           onClick={onTapWpp}
           className={` 
            cursor-pointer 
+           text-white
            hover:text-royalBlue
            md:text-2xl
             text-3xl
@@ -94,6 +103,7 @@ export const DefaultFooter = () => {
           onClick={onTapInsta}
           className={` 
           cursor-pointer 
+          text-white
           hover:text-royalBlue 
           md:text-2xl
             text-3xl
@@ -103,6 +113,7 @@ export const DefaultFooter = () => {
         <EmailOutlinedIcon
           className={` 
             cursor-pointer 
+            text-white
             hover:text-royalBlue
             md:text-2xl
             text-3xl
@@ -121,6 +132,7 @@ export const DefaultFooter = () => {
      `}
       >
         <a
+          href="#me-section"
           className={`
           hover:underline
        cursor-pointer
@@ -129,6 +141,7 @@ export const DefaultFooter = () => {
           Me
         </a>
         <a
+          href="#projects-section"
           className={`
           hover:underline
        cursor-pointer
@@ -137,6 +150,7 @@ export const DefaultFooter = () => {
           Projects
         </a>
         <a
+          href="#certificates-section"
           className={`
           hover:underline
        cursor-pointer
@@ -145,6 +159,7 @@ export const DefaultFooter = () => {
           Certificates
         </a>
         <a
+          href="#aboutMe-section"
           className={`
           hover:underline
        cursor-pointer
@@ -153,7 +168,9 @@ export const DefaultFooter = () => {
           About Me
         </a>
         <a
+          onClick={onTapWpp}
           className={`
+          text-royalBlue
           hover:underline
        cursor-pointer
      `}
