@@ -13,6 +13,8 @@ export default function CertificatesCarousel() {
       key={i}
       className={`
         m-auto
+        p-auto
+        h-auto
         `}
     >
       <div
@@ -26,12 +28,15 @@ export default function CertificatesCarousel() {
           py-10
           px-4
           bg-white
-          mx-6
+          md:mx-6
+          mx-2
           gap-y-8
           cursor-pointer
+          lg:mb-14
+          mb-16
           `}
       >
-        <Image width={65} height={250} src={certificate.image} alt="logo" />
+        <Image width={65} height={0} src={certificate.image} alt="logo" />
         <a
           className={`
           text-lg
@@ -73,10 +78,9 @@ export default function CertificatesCarousel() {
 
   function Carousel() {
     const configCarousel = {
-      dots: false,
+      dots: true,
       infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       nextArrow: <NextArrow />,
@@ -125,7 +129,7 @@ export default function CertificatesCarousel() {
   return (
     <div
       className={`
-        mt-[40px]
+        mt-10
         w-full
         flex
         h-auto
