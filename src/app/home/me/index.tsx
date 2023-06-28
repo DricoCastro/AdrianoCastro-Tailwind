@@ -106,7 +106,7 @@ export const MeSection = () => {
           👋🏻 Welcome, this is my website that I use to introduce myself and show
           my qualities, specialties and my experiences acquired in my journey
           here as a Jr. developer. Have a great experience and, if you feel
-          comfortable, you can contact me through the social networks below. 😉
+          comfortable, you can contact me through the social networks below. 😃
         </a>
         <div
           className={`
