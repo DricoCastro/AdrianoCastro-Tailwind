@@ -1,0 +1,14 @@
+.arrows{
+    display: block;
+}
+
+.arrows::before{
+    color:#3444f1;
+}
+
+@media (max-width: 1024px) {
+    .arrows{
+        display: none;
+    }
+    
+}
