@@ -28,7 +28,7 @@ export default function ProjectsCarousel() {
         items-center
         justify-start
         gap-x-8
-        mb-10
+        md:mb-10
         `}
         >
           <div

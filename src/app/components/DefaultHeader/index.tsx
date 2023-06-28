@@ -205,6 +205,8 @@ export const DefaultHeader = () => {
             <a
               href="#me-section"
               className={`
+              w-full
+              text-start
               text-base
               font-semibold
               ml-[10px]
@@ -216,7 +218,6 @@ export const DefaultHeader = () => {
           </div>
           <Divider style={{ width: "230px" }} />
           <div
-            onClick={() => {}}
             className={`
             w-full
             h-full
@@ -234,6 +235,8 @@ export const DefaultHeader = () => {
             <a
               href="#projects-section"
               className={`
+              w-full
+              text-start
               text-base
               font-semibold
               ml-[10px]
@@ -245,7 +248,6 @@ export const DefaultHeader = () => {
           </div>
           <Divider />
           <div
-            onClick={() => {}}
             className={`
             w-full
             h-full
@@ -263,6 +265,8 @@ export const DefaultHeader = () => {
             <a
               href="#certificates-section"
               className={`
+              w-full
+              text-start
               text-base
               font-semibold
               ml-[10px]
@@ -274,7 +278,6 @@ export const DefaultHeader = () => {
           </div>
           <Divider />
           <div
-            onClick={() => {}}
             className={`
             w-full
             h-full
@@ -292,6 +295,8 @@ export const DefaultHeader = () => {
             <a
               href="#aboutMe-section"
               className={`
+              w-full
+              text-start
               text-base
               font-semibold
               ml-[10px]
@@ -303,7 +308,6 @@ export const DefaultHeader = () => {
           </div>
           <Divider />
           <div
-            onClick={() => {}}
             className={`
             w-full
             h-full
@@ -321,6 +325,8 @@ export const DefaultHeader = () => {
             <span
               onClick={onTapWpp}
               className={`
+              w-full
+              text-start
               text-base
               font-semibold
               ml-[10px]
