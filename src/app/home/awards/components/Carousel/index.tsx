@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./StylesArrow.module.css";
 import Image from "next/image";
 import certificateData from "./data";
+import LinkIcon from "@mui/icons-material/Link";
 
 export default function CertificatesCarousel() {
   const certificateCarousel = certificateData.map((certificate, i) => {
@@ -22,7 +23,6 @@ export default function CertificatesCarousel() {
         `}
       >
         <div
-          onClick={OnTapCertificateLink}
           className={`
           m-auto
           flex
@@ -36,7 +36,6 @@ export default function CertificatesCarousel() {
           md:mx-6
           mx-2
           gap-y-8
-          cursor-pointer
           lg:mb-14
           mb-16
           `}
@@ -57,6 +56,21 @@ export default function CertificatesCarousel() {
          `}
           >
             {`" ${certificate.description} "`}
+          </a>
+
+          <a
+            onClick={OnTapCertificateLink}
+            className={`
+            text-base
+           font-medium
+           flex
+           items-center
+          cursor-pointer
+          hover:underline hover:underline-offset-2 hover:decoration-2	 hover:decoration-royalBlue
+           `}
+          >
+            <LinkIcon className={`origin-center -rotate-45 text-base `} />
+            Certificate
           </a>
 
           <Image

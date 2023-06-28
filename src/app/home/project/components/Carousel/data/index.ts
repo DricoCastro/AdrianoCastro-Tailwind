@@ -14,7 +14,7 @@ const ProjectsData = [
         
     },
     {
-        name:"RedeFastfood",
+        name:"Rede Fastfood",
         image: fastfood,
         link:"https://redefastfood.com/",
         description:"Web platform in the digital menu business, with area for the delivery owner and the common user.",
