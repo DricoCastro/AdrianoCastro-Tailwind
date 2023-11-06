@@ -5,6 +5,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Link from "next/link";
 
 const dricoImage = require("../../../../public/svgs/drico-image.svg");
 const brokeLine: string = "%0A";
@@ -89,7 +90,7 @@ export const MeSection = () => {
           mt-2.5
         `}
         >
-          Web and Mobile Developer Jr
+          Web and Mobile Frontend Developer
         </a>
 
         <a
@@ -156,7 +157,6 @@ export const MeSection = () => {
             text-3xl
           `}
           />
-
           <EmailOutlinedIcon
             className={` 
             cursor-pointer 
