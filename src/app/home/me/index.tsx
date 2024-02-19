@@ -90,7 +90,7 @@ export const MeSection = () => {
           mt-2.5
         `}
         >
-          Web and Mobile Frontend Developer
+          Web and Mobile Developer
         </a>
 
         <a
