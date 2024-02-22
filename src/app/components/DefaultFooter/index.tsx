@@ -54,7 +54,7 @@ export const DefaultFooter = () => {
        text-white
        `}
       >
-        Adriano Castro S.A © Copyright 2023
+        Adriano Castro S.A © Copyright 2024
       </a>
 
       <div
